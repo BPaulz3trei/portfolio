@@ -2,63 +2,89 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio – Communication Digitale</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header>
-  <h1>Portfolio – Communication Digitale</h1>
-  <p>Travaux académiques – Année 2025/2026</p>
+  <div class="header-inner">
+    <a href="index.html" class="header-brand">
+      <span class="logo-dot"></span>
+      <span>Portfolio <em style="color:var(--accent)">·</em> Com. Digitale</span>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="travaux/">Travaux</a></li>
+        <li><a href="cours/">Cours</a></li>
+        <li><a href="certifications/">Certifications</a></li>
+        <li><a href="projetCRM/">Projet CRM</a></li>
+        <li><a href="soutenance/diaporama.pdf">Soutenance</a></li>
+        <li><a href="ressources/veille.md">Ressources</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+      </ul>
+    </nav>
+    <span class="header-name">Paul Beyssac</span>
+  </div>
 </header>
 
-<nav>
-  <ul>
-    <li><a href="#travaux">Travaux</a></li>
-    <li><a href="#cours">Cours</a></li>
-    <li><a href="#certifications">Certifications</a></li>
-    <li><a href="#projetCRM">Projet CRM final</a></li>
-    <li><a href="#soutenance">Soutenance</a></li>
-    <li><a href="#ressources">Ressources</a></li>
-    <li><a href="a-propos.html">À propos</a></li>
-  </ul>
-</nav>
-
 <main>
-  <section id="travaux">
-    <h2>Travaux demandés</h2>
-    <p>Ensemble des travaux réalisés durant le semestre.</p>
-    <a href="travaux/">Accéder aux travaux</a>
+  <section class="hero">
+    <span class="hero-tag">Année 2025 / 2026</span>
+    <h1>Travaux académiques<br>en <em>Communication Digitale</em></h1>
+    <p>Retrouvez ici l'ensemble de mes productions, supports de cours, certifications et projets réalisés durant le semestre.</p>
   </section>
 
-  <section id="cours">
-    <h2>Supports de cours</h2>
-    <a href="cours/">Voir les notes et supports</a>
-  </section>
+  <div class="sections-grid">
 
-  <section id="certifications">
-    <h2>Certifications & projets</h2>
-    <a href="certifications/">Consulter</a>
-  </section>
+    <a href="travaux/" class="card">
+      <div class="card-icon">📁</div>
+      <h2>Travaux demandés</h2>
+      <p>Ensemble des travaux réalisés durant le semestre.</p>
+      <span class="card-arrow">Accéder →</span>
+    </a>
 
-  <section id="projet">
-    <h2>Projet final</h2>
-    <a href="projetCRM/">Découvrir le projet</a>
-  </section>
+    <a href="cours/" class="card">
+      <div class="card-icon">📖</div>
+      <h2>Supports de cours</h2>
+      <p>Notes, fiches et documents pédagogiques.</p>
+      <span class="card-arrow">Voir les supports →</span>
+    </a>
 
-  <section id="soutenance">
-    <h2>Diaporama de soutenance</h2>
-    <a href="soutenance/diaporama.pdf">Télécharger le diaporama</a>
-  </section>
+    <a href="certifications/" class="card">
+      <div class="card-icon">🏅</div>
+      <h2>Certifications</h2>
+      <p>Anglais, cybersécurité, Pix – mes certifications obtenues.</p>
+      <span class="card-arrow">Consulter →</span>
+    </a>
 
-  <section id="ressources">
-    <h2>Autres ressources</h2>
-    <a href="ressources/veille.md">Voir la veille</a>
-  </section>
+    <a href="projetCRM/" class="card">
+      <div class="card-icon">🚀</div>
+      <h2>Projet CRM Final</h2>
+      <p>Rapport, dépôt GitHub et démo du projet déployé.</p>
+      <span class="card-arrow">Découvrir →</span>
+    </a>
+
+    <a href="soutenance/diaporama.pdf" class="card">
+      <div class="card-icon">🎤</div>
+      <h2>Diaporama de soutenance</h2>
+      <p>Télécharger la présentation utilisée lors de la soutenance.</p>
+      <span class="card-arrow">Télécharger →</span>
+    </a>
+
+    <a href="ressources/veille.md" class="card">
+      <div class="card-icon">🔍</div>
+      <h2>Autres ressources</h2>
+      <p>Veille technologique et documents complémentaires.</p>
+      <span class="card-arrow">Voir la veille →</span>
+    </a>
+
+  </div>
 </main>
 
 <footer>
-  <p>© 2026 – Portfolio académique</p>
+  <p>© 2026 – Portfolio académique <span>·</span> Communication Digitale</p>
 </footer>
 
 <script src="js/main.js"></script>
